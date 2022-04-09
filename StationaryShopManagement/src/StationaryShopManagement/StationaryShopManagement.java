@@ -5,6 +5,7 @@
  */
 package StationaryShopManagement;
 import GUI.MainUI;
+import java.util.logging.Logger;
 public class StationaryShopManagement {
     /**
      * @param args the command line arguments
@@ -20,8 +21,10 @@ public class StationaryShopManagement {
         } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(MainUI.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        java.awt.EventQueue.invokeLater(() -> {
-            new MainUI().setVisible(true);
-       });
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new MainUI().setVisible(true);
+            }
+        });
     }
 }
