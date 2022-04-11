@@ -25,7 +25,7 @@ public class ViewSetup {
         try {
         selection = Integer.parseInt(scanner.nextLine());
       } catch (NumberFormatException e) {
-        Helper.printErrorMessage("Selection must be a number!");
+        Helper.printErrorMessage("Pilihan harus berupa angka!");
         continue;
       }
         
@@ -40,7 +40,7 @@ public class ViewSetup {
 
           for (int i = 0; i < produk.length; i++) {
             if (i == 0 && produk[i] == null) {
-              System.err.println("No computers added, yet.");
+              System.err.println("Belum ada Produk yang disetup.");
               System.err.println();
               break;
             }

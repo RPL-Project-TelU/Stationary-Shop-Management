@@ -60,7 +60,7 @@ public class Product {
       }
 
       System.out.println();
-      System.out.println("Your information has been added successfully.");
+      System.out.println("Setup Barang Berhasil.");
       System.out.println();
 
       return product;

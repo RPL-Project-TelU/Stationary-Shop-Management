@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/GUI/MainUI.java</file>
-            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/Login/Login.java</file>
-            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/Login/Admin.java</file>
+            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/ViewSetupProduct/Product.java</file>
+            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/ViewSetupProduct/Setup.java</file>
+            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/ViewSetupProduct/Helper.java</file>
+            <file>file:/F:/Kuliah/Kuliah/Semester%204/Konstruksi%20Perangkat%20Lunak/Tubes%20KPL/StationaryShopManagement/src/ViewSetupProduct/ViewSetup.java</file>
         </group>
     </open-files>
 </project-private>
