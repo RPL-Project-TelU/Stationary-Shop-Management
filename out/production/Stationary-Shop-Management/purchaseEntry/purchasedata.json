@@ -1,0 +1,16 @@
+[
+  {
+    "nama_produk": "Buku",
+    "jml_pembelian": 2,
+    "harga": 10000,
+    "nama_vendor": "Sidu Inc",
+    "jml_total_tagihan": 20000
+  },
+  {
+    "nama_produk": "Pensil",
+    "jml_pembelian": 4,
+    "harga": 5000,
+    "nama_vendor": "Lyra Corp",
+    "jml_total_tagihan": 20000
+  }
+]
