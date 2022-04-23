@@ -1,53 +1,24 @@
 //Ahmad Naufal 1302204085
 package ViewSetupProduct;
 public class Setup {
-    private static String SetupProduk(String Produk){
-        switch (Produk) {
-            case "penghapus":
-                return "ERA01";
-            case "rautan pensil":
-                return "SHRP02";
-            case "penggaris":
-                return "RLS03";
-            case "pensil":
-                return "PNCL04";
-            case "bolpoin":
-                return "PEN05";
-            case "buku":
-                return "BK06";
-            case "kotak pensil":
-                return "PB07";
-            case "lem":
-                return "GLE08";
-            case "tinta":
-                return "INK09";
-            case "tipe x":
-                return "CRT10";
-            case "stempel":
-                return "STM11";
-            case "kapur":
-                return "CHK12";
-            case "stepler":
-                return "STP13";
-            case "penjepit":
-                return "PNS14";
-            case "jangka":
-                return "CMPS15";
-            case "penjepit kertas":
-                return "PK16";
-            case "alat pelobang":
-                return "PNC17";
-            case "buku catatan":
-                return "NTBK18";
-            case "tas sekolah":
-                return "BAG19";
-            case "buku gambar":
-                return "DRBK20";
-            default:
-                return "NULL";
-        }
+    
+    private enum daftarProduk 
+    {
+        penghapus,rautan_pensil,penggaris,pensil,bolpoin,
+        buku,kotak_pensil,lem,tinta,tipe_x,stempel,kapur,
+        stepler,penjepit,jangka,penjepit_kertas,alat_pelobang,
+        buku_catatan,tas_sekolah,buku_gambar
     }
-    public static String getKodeProduk(String produk) {
-        return SetupProduk(produk);
+    
+    public static String[] kodeProduk = {"ERA01","SHRP02","RLS03","PNCL04","PEN05",
+        "BK06","PB07","GLE08","INK09","CRT10","STM11","CHK12","STP13","PNS14",
+        "CMPS15","PK16","PNC17","NTBK18","BAG19","DRBK20"};
+    
+    public static String getKodeProduk(String namaPrdk) {
+        try {            
+            return Setup.kodeProduk[Setup.daftarProduk.valueOf(namaPrdk.toLowerCase()).ordinal()];
+        } catch (Exception e) {
+            return "NOT FOUND";
+        }
     }
 }

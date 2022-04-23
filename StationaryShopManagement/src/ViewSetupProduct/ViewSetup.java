@@ -17,7 +17,7 @@ public class ViewSetup {
         System.out.println("Produk Menu:");
         System.out.println("1. Setup Produk");
         System.out.println("2. View Stock");
-        System.out.println("3. Search Kode Kategori Produk");
+        System.out.println("3. Kode Kategori Produk");
         System.out.println("4. Exit");
         
         System.out.print("Masukkan Pilihan: ");
@@ -46,16 +46,16 @@ public class ViewSetup {
             }
 
             if (produk[i] == null) break;
-
             produk[i].displayInformation();
             System.out.println();
           }
           break;
         case 3:
           Scanner input = new Scanner(System.in);
-          System.out.print("Masukkan Nama Kategori Barang : ");
-          String kl = input.nextLine();
-          System.out.println(Setup.getKodeProduk(kl));
+          System.out.print("Masukkan Nama Kategori Produk : ");
+          String prdk = input.nextLine();
+          System.out.printf("Kode Produk : %s",Setup.getKodeProduk(prdk));
+          System.out.println();
           break;
         case 4:
           System.out.println("Quitting...");

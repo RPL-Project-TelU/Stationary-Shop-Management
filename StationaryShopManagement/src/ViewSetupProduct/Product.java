@@ -13,7 +13,7 @@ public class Product {
     Product product = new Product();
     Scanner scanner = new Scanner(System.in);
     while (true) {
-      System.out.printf("Kode Produk : ");
+      System.out.printf("Kode Kategori Produk : ");
       product.kode_produk = scanner.nextLine().toUpperCase().trim();
 
       if (product.kode_produk.isEmpty()) {
@@ -21,11 +21,11 @@ public class Product {
         continue;
       }
       
-      System.out.printf("Kategori Produk : ");
+      System.out.printf("Nama Kategori Produk : ");
       product.nama_produk = scanner.nextLine().trim();
 
       if (product.kode_produk.isEmpty()) {
-        Helper.printErrorMessage("Kategori Produk Tidak Boleh Kosong!");
+        Helper.printErrorMessage("Nama Kategori Produk Tidak Boleh Kosong!");
         continue;
       }
 
@@ -68,6 +68,10 @@ public class Product {
   }
   
   public void displayInformation() {
+    Scanner input = new Scanner(System.in);
+    System.out.print("Masukkan Kode Produk : ");
+    input.nextLine();
+    System.out.printf("Nama Kategori Produk : %s%n", this.nama_produk);
     System.out.printf("Quantity : %s%n", this.quantity);
   }
 }
