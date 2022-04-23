@@ -1,3 +1,3 @@
 # Stationary-Shop-Management
 Kelompok YPR
-Statitionary Shop Management
+Stationary Shop Management
